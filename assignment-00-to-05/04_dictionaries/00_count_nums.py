@@ -1,34 +1,31 @@
-"""
-    Create an empty list.
-    Ask the user to input numbers and store them in a list. 
-    Once they enter a blank line, break out of the loop and return the list.
-    """
+
 
 def get_user_number():
-    user_number = []
+    number = []
     while True:
-        user_input = int(input("Enter a number: "))
-
+        user_input =input("Enter a number: ")
         if user_input == "":
-            break
+            break   
+        num = int(user_input)
+        number.append(num)
+    return number
 
-        user_number.append(user_input)
+def count_num(num_list):
+    count = {}
+    for num in num_list:
+        if num in count:
+            count[num] +=1 # num is used as a key in the dictionary.If the same number appears again, we increase its count.
+        else:
+            count[num] = 1
 
-    return user_number
+    return count
 
-"""
-    Create an empty dictionary.
-    Loop over the list of numbers. 
-    If the number is not in the dictionary, add it as a key with a value of 1.
-    If the number is in the dictionary, increment its value by 1.
-    """
-
-def count_nums():
-    num_dict = {}
-
-    
-    
-
+def main():
+    user_number = get_user_number()
+    num_dict = count_num(user_number)
+    print(num_dict)
+if __name__ == '__main__':
+    main()
 
 
 
