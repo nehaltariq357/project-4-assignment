@@ -1,4 +1,5 @@
-NUM_ROUNDS = 5
+# NUM_ROUNDS = 5
 
-for i in range(NUM_ROUNDS):
-    print(f"Round {i + 1}")
+# for i in range(NUM_ROUNDS):
+#     print(f"Round {i + 1}")
+

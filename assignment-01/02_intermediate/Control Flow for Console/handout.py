@@ -38,7 +38,15 @@ for i in range(NUM_ROUNDS):
             print(f"Sorry, you were wrong. your number {user_number} is not lower than the computer number {computer_number}")
     else:
         print("Invalid input! Please type 'higher' or 'lower'.")
+        #Milestone #5: Keep track of the score
     print(f"current score: {score}")
     print() # blank line between rounds
     
 print(f"Game Over! Your final score was: {score} out of {NUM_ROUNDS}")
+print() # blank line
+if score == NUM_ROUNDS:
+    print("Wow! You played perfectly!")
+elif score >=NUM_ROUNDS // 2:
+    print("Good job, you played really well!")
+else:
+    print("Better luck next time!")
