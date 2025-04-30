@@ -1,5 +1,4 @@
 
-
 import random
 
 print("Welcome to your password generator")
