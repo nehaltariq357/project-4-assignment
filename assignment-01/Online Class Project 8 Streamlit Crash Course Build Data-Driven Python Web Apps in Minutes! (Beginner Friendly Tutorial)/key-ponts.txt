@@ -1,0 +1,7 @@
+no need for front end coding
+reactice- your app updates every time a change is made
+
+-pip install streamlit
+-pip show streamlit
+-pip uninstall streamlit
+-streamlit hello / streamlit run app.py
